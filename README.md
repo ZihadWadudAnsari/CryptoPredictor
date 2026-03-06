@@ -6,7 +6,7 @@ with the live last 30 days average (mean) value. This is helpful for the user to
 Lastly to complete the analysis, a graph is produced to show the relationships between the Fear & Greed Index value and the "Bitcoin" search term
 value however for this to happen a data pipeline had to be constructed this is because the live data from the PyTrends API were few days late to
 update. The data pipeline utilises ETL operations to automatically get the data from the APIs, clean the data, store into a Pandas dataframe and then to
-push to the AWS MySQL cloud database to be queried.
+push to the Azure MySQL cloud database to be queried.
 
 The second subsection is the machine learning models, I utilised the yfinance Unofficial API for Yahoo Finance to access the real-time data.
 The first model is a forecasting machine learning model using time series analysis via the Prophet library to predict the future bitcoin prices based on
@@ -23,7 +23,7 @@ APIs:
 - yfinance Unofficial API for Yahoo Finance
 
 Services:
-- AWS RDS for MySQL Cloud Database
+- Azure MySQL Database
 
 Libraries:
 - Pymysql
